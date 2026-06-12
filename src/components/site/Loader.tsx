@@ -24,14 +24,13 @@ export function Loader() {
             className="text-center"
           >
           <div className="flex flex-col items-center">
-  <img
-    src="src/assets/loadingpage.jpeg"
-    alt="SHINE Logo"
-    className="w-40 md:w-56 object-contain"
-  />
+            <img src="src/assets/loadingpage.jpeg"
+            alt="SHINE Logo"
+            className="w-40 md:w-56 object-contain"
+          />
 
   <div className="mt-2 text-xs uppercase tracking-[0.5em] text-muted-foreground">
-       
+  <h5>goslow</h5>
   </div>
 </div>
             <div className="mx-auto mt-6 h-[2px] w-48 overflow-hidden rounded-full bg-secondary">
