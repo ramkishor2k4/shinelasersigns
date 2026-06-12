@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "./constants";
+import logo from "@/assets/logo.png";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -29,13 +30,23 @@ export function Navbar() {
             scrolled ? "glass-strong shadow-elegant" : ""
           }`}
         >
-          <a href="#home" className="flex flex-col leading-none">
-            <span className="font-display text-lg font-extrabold tracking-tight md:text-xl">
-              <span className="text-gradient">SHINE</span>
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.35em] text-muted-foreground">
-              Laser & Signages
-            </span>
+          {/* Logo + Company Name */}
+          <a href="#home" className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="SHINE Laser & Signages"
+              className="h-16 w-16 object-contain rounded-lg"
+            />
+
+            <div className="flex flex-col leading-none">
+              <span className="font-display text-lg font-extrabold tracking-tight md:text-xl">
+                <span className="text-gradient">SHINE</span>
+              </span>
+
+              <span className="text-[10px] uppercase tracking-[0.35em] text-muted-foreground">
+                Laser & Signages
+              </span>
+            </div>
           </a>
 
           <nav className="hidden items-center gap-7 lg:flex">
@@ -87,6 +98,7 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
+
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
