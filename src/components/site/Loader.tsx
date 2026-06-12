@@ -30,7 +30,7 @@ export function Loader() {
           />
 
   <div className="mt-2 text-xs uppercase tracking-[0.5em] text-muted-foreground">
-  <h5>goslow</h5>
+
   </div>
 </div>
             <div className="mx-auto mt-6 h-[2px] w-48 overflow-hidden rounded-full bg-secondary">
