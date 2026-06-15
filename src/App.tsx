@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Loader } from "@/components/site/Loader";
 import { ScrollProgress } from "@/components/site/ScrollProgress";
 import { MouseGlow } from "@/components/site/MouseGlow";
@@ -42,6 +43,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
