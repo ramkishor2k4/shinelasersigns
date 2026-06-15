@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import loadingImage from "../assets/loadingpage.jpeg";
+import loadingImage from "@/assets/loadingpage.jpeg";
 
 export function Loader() {
   const [done, setDone] = useState(false);
