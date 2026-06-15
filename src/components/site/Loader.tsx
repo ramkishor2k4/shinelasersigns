@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import loadingImage from "../assets/loadingpage.jpeg";
 
 export function Loader() {
   const [done, setDone] = useState(false);
@@ -24,10 +25,11 @@ export function Loader() {
             className="text-center"
           >
           <div className="flex flex-col items-center">
-            <img src="src/assets/loadingpage.jpeg"
-            alt="SHINE Logo"
-            className="w-40 md:w-56 object-contain"
-          />
+            <img
+  src={loadingImage}
+  alt="SHINE Logo"
+  className="w-40 md:w-56 object-contain"
+/>
 
   <div className="mt-2 text-xs uppercase tracking-[0.5em] text-muted-foreground">
  
