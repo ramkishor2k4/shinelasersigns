@@ -23,16 +23,12 @@ export function Loader() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-          <div className="flex flex-col items-center">
-            <img src="src/assets/loadingpage.jpeg"
-            alt="SHINE Logo"
-            className="w-40 md:w-56 object-contain"
-          />
-
-  <div className="mt-2 text-xs uppercase tracking-[0.5em] text-muted-foreground">
-
-  </div>
-</div>
+            <div className="font-display text-3xl font-extrabold tracking-tight md:text-5xl">
+              <span className="text-gradient">SHINE</span>
+            </div>
+            <div className="mt-2 text-xs uppercase tracking-[0.5em] text-muted-foreground">
+              Laser & Signages
+            </div>
             <div className="mx-auto mt-6 h-[2px] w-48 overflow-hidden rounded-full bg-secondary">
               <motion.div
                 className="h-full"
